@@ -1,0 +1,123 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "backend: run",
+            "type": "shell",
+            "command": "./mvnw",
+            "windows": {
+                "command": ".\\mvnw.cmd"
+            },
+            "args": [
+                "spring-boot:run"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/backend"
+            },
+            "isBackground": true,
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "backend: test",
+            "type": "shell",
+            "command": "./mvnw",
+            "windows": {
+                "command": ".\\mvnw.cmd"
+            },
+            "args": [
+                "test"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/backend"
+            },
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "backend: verify",
+            "type": "shell",
+            "command": "./mvnw",
+            "windows": {
+                "command": ".\\mvnw.cmd"
+            },
+            "args": [
+                "verify"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/backend"
+            },
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "frontend: install",
+            "type": "shell",
+            "command": "npm",
+            "windows": {
+                "command": "npm.cmd"
+            },
+            "args": [
+                "install"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/frontend"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "frontend: start",
+            "type": "shell",
+            "command": "npm",
+            "windows": {
+                "command": "npm.cmd"
+            },
+            "args": [
+                "run",
+                "start"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/frontend"
+            },
+            "isBackground": true,
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "frontend: test",
+            "type": "shell",
+            "command": "npm",
+            "windows": {
+                "command": "npm.cmd"
+            },
+            "args": [
+                "run",
+                "test",
+                "--",
+                "--watch=false"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/frontend"
+            },
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "frontend: build",
+            "type": "shell",
+            "command": "npm",
+            "windows": {
+                "command": "npm.cmd"
+            },
+            "args": [
+                "run",
+                "build"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/frontend"
+            },
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.eol": "\n",
+    "terminal.integrated.shellIntegration.enabled": true,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.test.config": {
+        "workingDirectory": "${workspaceFolder}"
+    },
+    "typescript.preferences.importModuleSpecifier": "shortest",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[markdown]": {
+        "editor.wordWrap": "on"
+    }
+}
