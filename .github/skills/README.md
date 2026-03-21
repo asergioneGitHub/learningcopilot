@@ -3,9 +3,11 @@
 These skills are reusable task playbooks for this repository and similar Spring Boot + Angular projects.
 
 ## How to Use
-- Keep governance in `.github/copilot-instructions.md`.
-- Keep project-specific facts in `.github/copilot-context.md`.
+- Start with `.github/copilot-instructions.md` to find the active effective governance entrypoint.
+- Read the active composition's `EFFECTIVE.md` under `.copilot/compositions/` before implementing changes.
 - Use one skill prompt when starting a task to enforce consistent execution.
+- Skills are "how to do work"; governance is "what rules apply".
+- If a skill conflicts with the active `EFFECTIVE.md`, **EFFECTIVE.md wins**.
 
 ## Available Skills
 

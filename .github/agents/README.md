@@ -3,13 +3,14 @@
 Agents are specialized personas that orchestrate how Copilot approaches a class of tasks.
 
 ## Relationship with Other Files
-- `.github/copilot-instructions.md`: non-negotiable global rules.
-- `.github/copilot-context.md`: project-specific facts.
+- `.github/copilot-instructions.md`: entrypoint/router to the active effective governance.
+- `.github/copilot-context.md`: repository navigation context.
+- `.copilot/**`: governance modules and compositions (effective rulesets).
 - `.github/skills/*.md`: task playbooks/checklists.
 - `.github/agents/*.agent.md`: role-based orchestration and output style.
 
 ## Available Agents
-- `backend-api-reviewer.agent.md` — Reviews or guides backend API changes for layered architecture, contract safety, validation, tests, and docs sync.
+- `backend-api-reviewer.agent.md` — Reviews or guides backend API changes for contract safety, validation, tests, and docs sync.
 
 ## How to Use
 Prompt pattern:
